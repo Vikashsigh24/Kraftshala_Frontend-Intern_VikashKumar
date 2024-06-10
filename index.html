@@ -1,1 +1,96 @@
 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container" id="bg-image">
+        <div class="input-text">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button onclick="getWeatherByCity()"> <img src="img/search-interface-symbol.png" alt=""> </button>
+            <button onclick="getWeatherByLocation()"><img src="img/location.png" alt=""></button>
+            <button id="toggle-dark-mode"><img src="img/dark-mode.png" alt=""></button>
+
+            <h2 id="error"></h2>
+
+        </div>
+
+        <div class="table">
+            <div class="row" id="hide-table">
+                <h2 id="error-current"></h2>
+                <div class="column">
+                    <h1 id="city-name">_ _</h1>
+                    <h1 style="margin-top: 50px;">
+                        <h1><span id="temp">_ _</span> °C</h1>
+                        <h3><span id="description"></span></h3>
+                        <p id="time"></p>
+
+                </div>
+
+                <div class="column">
+                    <img id="image" src="img/sun.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="table-2">
+
+            <div class="row" id="table-2">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;Todays Forecast</h2>
+
+                <div class="column-6">
+                    <h3>Temp</h3><br>
+                    <img src="img/celsius.png" alt="">
+                    <h3><span id="col-temp">_ _</span> °C</h3>
+                </div>
+
+                <div class="column-6">
+                    <h3>Fells Like</h3><br>
+                    <img src="img/thermometer.png" alt="">
+                    <h3><span id="feelsLike">_ _</span> °C</h3>
+                </div>
+                <div class="column-6">
+                    <h3>Temp Min</h3><br>
+                    <img src="img/min-temp.png" alt="">
+                    <h3><span id="tempMin">_ _</span> °C</h3>
+                </div>
+                <div class="column-6">
+                    <h3>Temp Max</h3><br>
+                    <img src="img/hightemperature.png" alt="">
+                    <h3><span id="tempMax">_ _</span> °C</h3>
+                </div>
+                <div class="column-6">
+                    <h3>Pressure</h3><br>
+                    <img src="img/thermometer.png" alt="">
+                    <h3><span id="pressure">_ _</span> hPa</h3>
+                </div>
+                <div class="column-6">
+                    <h3>Humidity</h3><br>
+                    <img src="img/humidity.png" alt="">
+                    <h3><span id="humidity">_ _</span> %</h3>
+                </div>
+                <div class="column-6">
+                    <h3>Description</h3><br>
+                    <img src="img/description.png" alt="">
+                    <h3><span id="col-description">_ _</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
