@@ -18,7 +18,7 @@
 #bg-image {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(#E056FD, #000000);
+    background-image: url(img/clear-sky-img.jpg);
 
 }
 
